@@ -17,13 +17,11 @@
             <p class="text-center profileTxt">1minRead News</p>
       </div>
       <ion-list class="iconsMenu">
-        <ion-item menu-close ng-href="#/app/"> <i class="icon ion-home"></i>Home</ion-item>
+        <ion-item menu-close ng-href="#/app/">Home</ion-item>
         <ion-item menu-close ng-href="#/app/home/{{item.name}}" ng-repeat="item in categories" target="_self">{{item.name}}</ion-item>
-        <ion-item menu-close ng-href="#/app/devicestatus">
-      <i class="icon ion-android-settings"></i>Device Status</ion-item>
-      <ion-item menu-close ng-href="#/app/about">
-      <i class="icon ion-person"></i>About</ion-item>
-            <ion-item menu-close ng-href="#/app/contact"><i class="icon ion-chatboxes"></i>Contact</ion-item>
+        <ion-item menu-close ng-href="#/app/devicestatus">Device Status</ion-item>
+      <ion-item menu-close ng-href="#/app/about">About</ion-item>
+            <ion-item menu-close ng-href="#/app/contact">Contact</ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
