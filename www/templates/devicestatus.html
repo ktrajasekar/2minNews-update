@@ -1,0 +1,37 @@
+<ion-view view-title="Device Status">
+  <ion-content overflow-scroll=”true”>
+            <div class="card">
+            <div class="item item-divider">
+               Your Network Status!
+            </div>  
+            <div class="item item-text-wrap">
+                <ul class="list">
+                    <li class="item">
+                        Type : {{type}}
+                    </li>
+                    <li class="item">
+                        isOnline : {{isOnline}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+  <div class="card">
+            <div class="item item-divider">
+                Your device information!
+            </div>
+            <div class="item item-text-wrap">
+                <ul class="list">
+                    <li class="item">
+                        Manufacturer : {{manufacturer}}
+                    </li>
+                    <li class="item">
+                        Platform : {{platform}}
+                    </li>
+                    <li class="item">
+                        UUID : {{uuid}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-reded">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon Whitecolor" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content>
+           <div class="profilePhoto text-center">
+          <img src="http://placeimg.com/90/90/people" alt="">
+            <p class="text-center profileTxt">1minRead News</p>
+      </div>
+      <ion-list class="iconsMenu">
+        <ion-item menu-close ng-href="#/app/"> <i class="icon ion-home"></i>Home</ion-item>
+        <ion-item menu-close ng-href="#/app/home/{{item.name}}" ng-repeat="item in categories" target="_self">{{item.name}}</ion-item>
+        <ion-item menu-close ng-href="#/app/devicestatus">
+      <i class="icon ion-android-settings"></i>Device Status</ion-item>
+      <ion-item menu-close ng-href="#/app/about">
+      <i class="icon ion-person"></i>About</ion-item>
+            <ion-item menu-close ng-href="#/app/contact"><i class="icon ion-chatboxes"></i>Contact</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

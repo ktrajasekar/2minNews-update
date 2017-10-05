@@ -1,5 +1,15 @@
 {
   "name": "myApp",
   "app_id": "",
-  "type": "ionic1"
+  "type": "ionic1",
+  "integrations": {
+    "cordova": {},
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
