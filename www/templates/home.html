@@ -9,6 +9,7 @@
   </div>
 </div>
 </div>
+<div ng-if = "postData.length > 0 ">
       <div class="list card" ng-repeat="x in postData">
         <div class="item item-body latestPost">
           <!-- <img class="full-image" src="delorean.jpg"> -->
@@ -22,6 +23,13 @@
           <p>{{x.date}}</p>
         </div>
       </div>
-
+    </div>
+    <div ng-if = "postData.length == 0 ">
+        <div class="card">
+            <div class="item item-text-wrap">
+                <p class="text-center"><i class="ion-close-circled"></i> </p> 
+                <p class="text-center"> No Posts Found :(  </p>
+            </div>
+          </div>
     </ion-content>
 </ion-view>

@@ -1,5 +1,14 @@
 <ion-view view-title="Post Details" class="">
     <ion-content>
+        <div class="loaderScope" ng-show="loading">
+            <!-- <div class="lds-css ng-scope" ng-show="loading"> -->
+        <div class="lds-css ng-scope" ng-show="loading">
+        <div style="width:100%;height:100%" class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      </div>
       <div class="card postDetails">
   <div class="item item-text-wrap">
     <h2 ng-bind-html="postData.title.rendered"></h2>

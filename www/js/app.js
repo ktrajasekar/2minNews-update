@@ -50,7 +50,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       }
     })
     .state('app.home', {
-      url: '/home/:name',
+      url: '/home/:id',
       views: {
         'menuContent': {
           templateUrl: 'templates/home.html',
@@ -84,6 +84,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
   return {
     categoriesData: function(){
             return $http.get(apiURL + 'categories');
-         }
+         }, 
+    postsData :function(){
+      return $http.get(apiURL + 'posts');
+    },
+    onlyCategoryPost :function(catID){
+      if(catID=='' || catID == "posts"){
+        return $http.get(apiURL + 'posts');
+      }
+      else{
+      return $http.get(apiURL + 'posts?categories=' + catID);
+      }
+    }, 
+    postdetails : function(postID){
+       return $http.get(apiURL + 'posts/' + postID);
+    }
   }
 });
