@@ -18,8 +18,9 @@
             <p><a href="#" ng-click="postDetails(x.id)">Read More</a></p>
         </div>
         <div class="item item-avatar">
-      <img src="{{x.author.avatar}}" alt="">
-          <h2>{{x.author.name}}</h2>
+            
+      <img src="{{x._embedded.author[0].avatar_urls[96]}}" alt="">
+          <h2>{{x._embedded.author[0].name}}</h2>
           <p>{{x.date}}</p>
         </div>
       </div>

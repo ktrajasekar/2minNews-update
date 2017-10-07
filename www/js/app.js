@@ -86,11 +86,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
             return $http.get(apiURL + 'categories');
          }, 
     postsData :function(){
-      return $http.get(apiURL + 'posts');
+      return $http.get(apiURL + 'posts?_embed');
     },
     onlyCategoryPost :function(catID){
       if(catID=='' || catID == "posts"){
-        return $http.get(apiURL + 'posts');
+        return $http.get(apiURL + 'posts?_embed');
       }
       else{
       return $http.get(apiURL + 'posts?categories=' + catID);

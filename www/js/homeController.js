@@ -17,6 +17,6 @@ apps.controller('homeCtrl', function($ionicPlatform,$http, $state, $scope, $stat
         });
         $scope.postDetails = function(postid){
           console.log(postid);
-              $state.go('app.postdetails',{postID: postid});
+          $state.go('app.postdetails',{postID: postid});
         }
   })
