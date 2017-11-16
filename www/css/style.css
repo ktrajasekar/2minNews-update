@@ -1,1 +1,155 @@
 /* Empty. Add your own CSS if you like */
+
+
+.header-color{
+    background:#000;
+    color: #fff;
+}
+/* Empty. Add your own CSS if you like */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.Whitecolor {
+    color: #fff !important;
+}
+
+.iconsMenu .icon {
+    font-size: 24px;
+    color: #ccc;
+    padding-right: 5px;
+}
+
+.bar-reded {
+    border-color: #E84952;
+    background-color: #E84952;
+    color: #fff;
+}
+
+
+/* --------- Home page Styles ----------- */
+
+.homeTheme {
+    margin: 10px 0;
+}
+
+.homeTheme h3 {
+    font-size: 20px;
+}
+
+.iconsMenu {
+    background: #444444 !important;
+}
+
+.iconsMenu .item-complex .item-content,
+.iconsMenu .item-radio .item-content {
+    background: #444 !important;
+    color: #fff;
+}
+
+.profilePhoto {
+    padding: 20px;
+    background: #444 !important;
+}
+
+.profilePhoto img {
+    border-radius: 50%;
+    padding: 2px;
+    width: 90px;
+    height: 90px;
+    border: #ccc 1px solid;
+}
+
+.profileTxt {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.latestPost{}
+.latestPost h3{
+  padding: 0;
+  font-weight: 600;
+  margin: 0;
+}
+.postDetails h2{
+  margin-bottom: 15px;
+}
+.postsummary a{
+  display: none;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+    left: 18px;
+    width: 156px;
+    height: 156px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes lds-ripple {
+  0% {
+    top: 96px;
+    left: 96px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+    left: 18px;
+    width: 156px;
+    height: 156px;
+    opacity: 0;
+  }
+}
+.lds-ripple {
+  position: relative;
+}
+.lds-ripple div {
+  box-sizing: content-box;
+  position: absolute;
+  border-width: 4px;
+  border-style: solid;
+  opacity: 1;
+  border-radius: 50%;
+  -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(1) {
+  border-color: #bd4030;
+}
+.lds-ripple div:nth-child(2) {
+  border-color: #e0b83e;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+.lds-ripple {
+  width: 86px !important;
+  height: 86px !important;
+  -webkit-transform: translate(-43px, -43px) scale(0.43) translate(43px, 43px);
+  transform: translate(-43px, -43px) scale(0.43) translate(43px, 43px);
+}
+.loaderScope{
+  text-align: center;
+      padding: 40vh 40vw;
+}
+.text-center{
+  text-align: center
+}
+.bar .button.back-button, .bar button.back-button{
+  color: #fff;
+}

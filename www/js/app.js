@@ -40,10 +40,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('app.browse', {
-    url: "/browse",
+    url: "/browse:id",
     views: {
       'tab-browse': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/browse.html",
+        controller:'postPage'
       }
     }
   })
@@ -69,4 +70,28 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     });
   // if none of the above states are matched, use this as the fallback
    $urlRouterProvider.otherwise('/app/playlists');
+})
+
+.factory('servicesreturn', function($http){
+  var apiURL = 'http://flashbulb.in/wp-json/wp/v2/' ;
+  return {
+    categoriesData: function(){
+            return $http.get(apiURL + 'categories');
+         }, 
+    postsData :function(){
+      return $http.get(apiURL + 'posts?_embed');
+    },
+    onlyCategoryPost :function(catID){
+      if(catID=='' || catID == "posts"){
+        return $http.get(apiURL + 'posts?_embed');
+      }
+      else{
+      return $http.get(apiURL + 'posts?categories=' + catID);
+      }
+    }, 
+    postdetails : function(postID){
+       return $http.get(apiURL + 'posts/' + postID);
+    }
+  }
 });
+
