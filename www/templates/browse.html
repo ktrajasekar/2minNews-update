@@ -13,16 +13,32 @@
       <div class="list card" ng-repeat="x in postData">
         <div class="item item-body latestPost">
           <!-- <img class="full-image" src="delorean.jpg"> -->
-              <h3 ng-bind-html="x.title.rendered"></h3>
+            <h3 ng-bind-html="x.title.rendered"></h3>
             <p ng-bind-html="x.excerpt.rendered" class="postsummary"></p>
-            <p><a href="#" ng-click="postDetails(x.id)">Read More</a></p>
+            <div class="row">
+                <div class="col col-80 readMore"><p>
+                  
+                  <a href="#" ng-click="postDetails(x.id)"> <i class = "icon ion-android-globe"></i>Read More</a></p>
+                </div>
+                <div class="col col-10 col-offset-10 padding shareIcon">
+                   <a href="" ng-click="share();">
+                      <i class = "icon ion-android-share-alt"></i>
+                   </a>
+                </div>
+              </div>
+
+
+             
+
         </div>
-        <div class="item item-avatar">
-            
+        
+        <!-- 
+          Author Info 
+          <div class="item item-avatar">
       <img src="{{x._embedded.author[0].avatar_urls[96]}}" alt="">
           <h2>{{x._embedded.author[0].name}}</h2>
           <p>{{x.date}}</p>
-        </div>
+        </div> -->
       </div>
     </div>
     <div ng-if = "postData.length == 0 ">
@@ -34,3 +50,10 @@
           </div>
     </ion-content>
 </ion-view>
+
+
+
+<!-- ion-android-globe -->
+<!-- ion-ios-refresh
+ion-videocamera
+-->

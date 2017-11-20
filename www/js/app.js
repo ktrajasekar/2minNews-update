@@ -40,7 +40,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   })
 
   .state('app.browse', {
-    url: "/browse:id",
+    url: "/browse/:id",
     views: {
       'tab-browse': {
         templateUrl: "templates/browse.html",
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'tab-playlists': {
         templateUrl: "templates/playlists.html",
-        controller: 'PlaylistsCtrl'
+        // controller: 'PlaylistsCtrl'
       }
     }
   })
@@ -69,7 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     });
   // if none of the above states are matched, use this as the fallback
-   $urlRouterProvider.otherwise('/app/playlists');
+   $urlRouterProvider.otherwise('/app/browse/');
 })
 
 .factory('servicesreturn', function($http){

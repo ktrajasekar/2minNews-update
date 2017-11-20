@@ -153,3 +153,28 @@ h3 {
 .bar .button.back-button, .bar button.back-button{
   color: #fff;
 }
+.tab-nav.tabs{
+    background: #000;
+}
+.tab-nav.tabs .icon{
+    color: #fff;
+}
+.tabs-striped .tab-item.tab-item-active, .tabs-striped .tab-item.active, .tabs-striped .tab-item.activated{
+    border-bottom:#ccc 2px solid;
+}
+.shareIcon .icon{
+    vertical-align: middle;
+    font-size: 19px;
+    color: #000;
+    text-align: right;
+    padding-top: 10px;
+    display: inline-block;
+}
+.readMore a{
+    color: #FF6600;
+    text-decoration: none;
+}
+.readMore .icon{
+    padding-right: 3px;
+    display: inline-block;
+}
