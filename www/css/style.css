@@ -178,3 +178,10 @@ h3 {
     padding-right: 3px;
     display: inline-block;
 }
+.featuredImage{
+    margin-bottom:15px;
+}
+.featuredImage img{
+    width: 100%;
+    height: auto;
+}

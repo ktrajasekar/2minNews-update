@@ -12,24 +12,28 @@
 <div ng-if = "postData.length > 0 ">
       <div class="list card" ng-repeat="x in postData">
         <div class="item item-body latestPost">
-          <!-- <img class="full-image" src="delorean.jpg"> -->
+            <div ng-if = "x.featured_media > 0 ">
+                <div class="featuredImage">
+                    <img src="{{x.featured_image_thumbnail_url}}" alt="">              
+                </div>
+            </div>
+            <div ng-if = "x.featured_media == 0 ">
+                <div class="featuredImage">
+                    <img src="img/image-coming-soon.jpg" alt="">      
+                </div>
+            </div>
             <h3 ng-bind-html="x.title.rendered"></h3>
             <p ng-bind-html="x.excerpt.rendered" class="postsummary"></p>
             <div class="row">
                 <div class="col col-80 readMore"><p>
-                  
                   <a href="#" ng-click="postDetails(x.id)"> <i class = "icon ion-android-globe"></i>Read More</a></p>
                 </div>
                 <div class="col col-10 col-offset-10 padding shareIcon">
-                   <a href="" ng-click="share();">
+                   <a href="" ng-click="share(x.title.rendered, x.excerpt.rendered);">
                       <i class = "icon ion-android-share-alt"></i>
                    </a>
                 </div>
               </div>
-
-
-             
-
         </div>
         
         <!-- 

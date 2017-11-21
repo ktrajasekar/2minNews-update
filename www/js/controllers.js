@@ -69,6 +69,14 @@ apps.controller('postPage', function ($scope, $ionicModal, $timeout, $http, $sta
 
 //
 
+servicesreturn.featuredImage($stateParams.id)
+.then(function (datas) {
+  $scope.images = datas.data;
+  console.log(datas);
+}).finally(function () {
+  $scope.loading = false;
+});
+
 // $cordovaSocialSharing
 // .share(message, subject, file, link) // Share via native share sheet
 // .then(function(result) {
@@ -79,10 +87,9 @@ apps.controller('postPage', function ($scope, $ionicModal, $timeout, $http, $sta
 
 
 
-$scope.share = function () {
-  $cordovaSocialSharing.share('This is my message', 'Subject string', null, 'http://www.mylink.com');
+$scope.share = function (message, subject ) {
+  $cordovaSocialSharing.share(message, subject, null, 'http://www.flashbulb.in');
 }
-
 });
 
 apps.controller('PlaylistCtrl', function ($scope, $stateParams) {

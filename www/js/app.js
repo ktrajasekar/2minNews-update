@@ -6,6 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])
 
+
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -91,7 +92,11 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     }, 
     postdetails : function(postID){
        return $http.get(apiURL + 'posts/' + postID);
-    }
+    },
+    featuredImage : function(featuredImageID){
+      console.log(featuredImageID);
+      return $http.get(apiURL + 'media/' + featuredImageID);
+   }
   }
 });
 
