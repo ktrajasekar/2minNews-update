@@ -7,8 +7,9 @@
 - Cordova
 - Device Plugin
 - Network Plugin
+- Social share Plugin
 
-## Installing this application
+## How to install and run in browser
 
 - Clone or Download this application.
 - Goto the project folder and  run "npm Install " to download the dependencies.
@@ -18,6 +19,11 @@
 ## Building Android 
 
  > ionic cordova run android --device --livereload
+ 
+ ## Other Links
+ 
+ ### Browser SYNC for live reload
+ https://www.npmjs.com/package/cordova-plugin-browsersync
 
 
 
