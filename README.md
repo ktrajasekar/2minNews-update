@@ -1,8 +1,5 @@
 # 2minNews-update
 
-## Demo 
-
-![2 Min News Application using Ionic 1](https://ktragrifarms.files.wordpress.com/2018/03/output_65nxv31.gif)
 
 ## Frameworks used
 
@@ -19,6 +16,10 @@
 - Goto the project folder and  run "npm Install " to download the dependencies.
 - To run this application in the browser just type "ionic serve".
 - To run this as .apk file you need to install Android studio, Android SDK and connect your device to run it using CMD.
+
+## Demo 
+
+![2 Min News Application using Ionic 1](https://ktragrifarms.files.wordpress.com/2018/03/output_65nxv31.gif)
 
 ## Building Android 
 
