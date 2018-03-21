@@ -1,5 +1,12 @@
 # 2minNews-update
 
+## Demo 
+img[src$="centerme"] {
+  display:block;
+  margin: 0 auto;
+}
+![2 Min News Application using Ionic 1](https://ktragrifarms.files.wordpress.com/2018/03/output_65nxv31.gif?style=centerme)
+
 ## Frameworks used
 
 - AngularJS 1.5
